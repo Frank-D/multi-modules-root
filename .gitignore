@@ -1,0 +1,14 @@
+# Gradle
+.gradle/
+
+# VS Code
+.vscode/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# OS
+.DS_Store

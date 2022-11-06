@@ -1,0 +1,21 @@
+plugins {
+	id 'java-library' // to enable the use of 'api' dependencies and export those to other dependant projects
+}
+
+group = 'com.reproduce.testfixtures.uc.modb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	api project(":module-a-testfixtures")
+
+	testImplementation(testFixtures(project(":module-a-testfixtures")))
+}

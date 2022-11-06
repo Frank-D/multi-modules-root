@@ -1,0 +1,5 @@
+rootProject.name = 'multi-modules-root'
+
+include ('module-a-testfixtures')
+include ('module-b-dependson-a')
+include ('module-c-dependson-b')

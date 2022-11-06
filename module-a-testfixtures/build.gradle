@@ -1,0 +1,28 @@
+plugins {
+	id 'java-library'
+	id 'java-test-fixtures' // to export java test helper/data "fixture" classes for other projects to re-use in their tests...
+}
+
+group = 'com.reproduce.testfixtures.uc.moda'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+}
+
+// sourceSets {
+//     main {
+//         java {
+//             srcDir 'src/main/java'
+//         }
+//     }
+// }
